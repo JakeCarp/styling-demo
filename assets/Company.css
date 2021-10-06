@@ -1,6 +1,7 @@
   .hero{
       height: 70vh;
       padding: 0;
+
   }
   .hero-img{ 
     object-fit: cover;
