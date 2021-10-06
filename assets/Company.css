@@ -1,0 +1,17 @@
+  .hero{
+      height: 70vh;
+      padding: 0;
+  }
+  .hero-img{ 
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  } 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main  {
+  flex-grow: 1;
+}
