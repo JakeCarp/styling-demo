@@ -8,37 +8,167 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/lux.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap"
-        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/assets/product.css">
-    <title>Product Landing Page</title>
+    <title>Omega Mock</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="container-fluid sticky-top p-0">
+        <nav class="navbar navbar-expand-lg navbar-primary bg-primary ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Styling Demo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="/ecommerce.html">Ecommerce Demo</a>
-                        <a class="nav-link" href="/company.html">Company Landing Page</a>
-                        <a class="nav-link" href="/product.html">Product Landing Page</a>
-                    </div>
+                <a class="navbar-brand text-white" href="/index.html">
+                    <i class="mdi mdi-36px mdi-omega"></i>
+                </a>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#reviews">Reviews</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <main class="container-fluid">
+        <div class="row  bg-hero">
+            <div class="col-md-4 py-5 sm-px-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title header-font">
+                            Reserve Your Watch Today
+                        </h3>
+                        <form>
+                            <div class="mb-2">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameInput">
+                            </div>
+                            <div class="mb-2">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-2">
+                                <label for="phoneInput" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" name="phone" id="phoneInput"
+                                    placeholder="(555) 555-5555">
+                            </div>
+                            <div class="mb-2">
+                                <label for="messageInput" class="form-label">Message</label>
+                                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                            </div>
+                            <div class=" mb-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Recieve email Offers and
+                                    Deals</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 d-md-flex flex-column d-none pb-5 align-self-end">
+                <div class="border-start border-primary border-5 ps-2 bg-secondary">
+                    <h3 class="header-font">Leading the World in Luxury</h3>
+                    <p>with the highest quality materials and master crafstmen, nothing comes close to Omega Seamaster
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-primary" id="features">
+            <div class="col-md order-md-2 py-2">
+                <div class="card card-spill shadow">
+                    <div class="card-body">
+                        <p> <i class="mdi mdi-magnet"></i> Anti-Magnetic</p>
+                        <p> <i class="i mdi mdi-calendar-range"></i> Date Display</p>
+                        <p> <i class="i mdi mdi-clock-time-eight-outline"></i> Master Chonometer Certified</p>
+                        <p> <i class="i mdi mdi-hospital-box-outline"></i> Swiss Made</p>
+                        <p> <i class="i mdi mdi-seal"></i> 5-Year Warranty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md order-md-1 py-2 text-white">
+                <h4 class="header-font text-white">Made from the highest quality precious metals and steel</h4>
+                <h5 class="text-white">ethically sourced from fair-trade dealers</h5>
+                <p>Stainless steel is certainly the most conventional of watchmaking materials for outer craftsmanship,
+                    and offers beauty,
+                    strength and affordability.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 py-5 ">
+                <img class="img-fluid rounded shadow" src="/assets/alex-boscarato-U6X1le3OcpY-unsplash.jpg"
+                    alt="Man wearing a watch">
+            </div>
+            <div class="col-md-7 d-flex justify-content-center align-items-center flex-column flex-wrap pb-3">
+                <h4 class="header-font">A Timepeice with History</h4>
+                <p class="text-shadow">The Seamaster Aqua Terra is a superb tribute to OMEGA’s rich maritime heritage.
+                    In this 38mm model,
+                    the symmetrical case
+                    has been crafted from stainless steel, with a wave-edged design featured on the back.
 
+                    The blue dial is sun-brushed and is distinguished by a horizontal “teak” pattern which is inspired
+                    by the wooden decks
+                    of luxury sailboats. There is also a date window at 6 o'clock and rhodium-plated hands and indexes
+                    filled with white
+                    Super-LumiNova.
+
+                    Presented on a polished and brushed bracelet, this certified chronometer is powered by the OMEGA
+                    Master Chronometer
+                    calibre 8800, certified at the industry’s highest standard by the Swiss Federal Institute of
+                    Metrology (METAS).</p>
+                <button class="btn btn-rounded btn-primary">Product Sheet</button>
+            </div>
+        </div>
+        <div class="row justify-content-around" id="reviews">
+            <div class="card order-md-2 col-md-3 py-5 border-secondary shadow">
+                <div class="card-body text-center hero-card ">
+                    <i class="mdi mdi-star"></i>
+                    <i class="mdi mdi-star"></i>
+                    <i class="mdi mdi-star"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quos. At aut dolorum tempora
+                        adipisci amet animi repellendus, magnam ut.</p>
+
+                </div>
+            </div>
+            <div class="card order-md-1 col-md-3 my-5 border-secondary shadow">
+                <div class="card-body text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quasi expedita dolores
+                        voluptatem sunt soluta doloremque, illo explicabo corporis ducimus cupiditate saepe error alias
+                        non corrupti natus blanditiis odit, laudantium distinctio deleniti illum, sint consequuntur!
+                    </p>
+                </div>
+            </div>
+            <div class="card order-md-3 col-md-3 my-5 border-secondary shadow">
+                <div class="card-body text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ratione eos, nesciunt, est
+                        quaerat illo accusantium consequatur commodi adipisci tempore eaque. Autem, in tempora.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 text-white flex-column bottom-section">
+            <h4 class=" header-font text-white text-decoration-underline">DISCOVER THE UNIVERSE</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem maiores neque non dolores perferendis
+                vero, et illo inventore, vel amet nostrum! Suscipit qui ad perspiciatis provident voluptas voluptates
+                ipsam perferendis unde. Maiores fugit, reiciendis expedita exercitationem consequatur iusto vel
+                voluptatibus quidem fugiat veniam ut dolorum aspernatur eaque! Totam consectetur nobis velit eligendi
+                laborum, autem nulla neque laudantium ex ipsum qui quod asperiores in iste maxime. Praesentium qui rem
+                dolore? Temporibus.</p>
+        </div>
+    </main>
+    <footer class="container-fluid  text-center">
+        <h5 class="header-font">Made with Bootstrap v5.1</h5>
+    </footer>
 </body>
 
 </html>

@@ -1,5 +1,33 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body{
+    min-height: 100vh;
+}
+.bg-hero{
+    background-image: url(/assets/john-torcasio-TJrkkhdB39E-unsplash.jpg);
+    background-position: center;
+    background-size: cover
+}
+.card-hero{
+    min-height: 30vh;
+}
+.header-font{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.bottom-section{
+    min-height: 30vh;
+    background-image:
+        linear-gradient(black, black),
+        url(/assets/parker-ulry-Q0_xnB-LmPI-unsplash.jpg);
+        background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* all css within these brakets is only applied on screens GREATER than 768ps */
+  .card-spill {
+    transform: translateY(5em)
+  }
+
 }
