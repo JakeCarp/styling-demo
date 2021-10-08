@@ -3,3 +3,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+.tag-img{
+  max-height: 5vh;
+  max-width: 5vw;
+}
+@font-face {
+  font-family: "alien-encounters";
+  src:url(/assets/Alien-Encounters-Regular.ttf);
+}
+.header-font {
+  font-family: "alien-encounters";
+  font-size: 5vh;
+}
+.preview{
+  height: 40vh;
+}
