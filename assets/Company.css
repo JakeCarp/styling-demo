@@ -1,18 +1,16 @@
-  .hero{
-      height: 70vh;
-      padding: 0;
-
-  }
-  .hero-img{ 
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  } 
-body {
+body{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
-main  {
-  flex-grow: 1;
+.bg-hero{
+  background-image: url(/assets/markus-winkler-3vlGNkDep4E-unsplash.jpg);
+  min-height: 75vh;
+  background-position: center;
+  background-size: cover;
+}
+.hero-card{
+  max-height: 40vh;
+}
+
+.header-font{
+  font-family: 'Roboto Condensed', sans-serif;
 }
