@@ -23,7 +23,12 @@ body{
     
 }
 
-
+.secondary-card{
+    height: 25vh;
+}
+.primary-card{
+    height: 35vh;
+}
 @media only screen and (min-width: 768px) {
   /* all css within these brakets is only applied on screens GREATER than 768ps */
   .card-spill {
