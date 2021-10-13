@@ -18,3 +18,7 @@ body {
 .preview{
   height: 40vh;
 }
+
+.catalog-card{
+  max-height: 15vh;
+}
