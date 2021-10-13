@@ -3,6 +3,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+main {
+  flex-grow: 1;
+}
 .tag-img{
   max-height: 5vh;
   max-width: 5vw;
@@ -15,10 +18,12 @@ body {
   font-family: "alien-encounters";
   font-size: 5vh;
 }
-.preview{
-  height: 40vh;
+.catalog {
+  width: 40vh;
 }
-
-.catalog-card{
-  max-height: 15vh;
+.car-img {
+  object-fit: cover;
+}
+.custom-nav {
+  z-index: 9999;
 }
